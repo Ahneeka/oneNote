@@ -1,13 +1,656 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.place {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  height: 110vh;
+  overflow: hidden;
+}
+.place > div {
+  flex: 1;
+}
+.div1 {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.onenote {
+  display: block;
+  height: 40px;
+  align-self: flex-start;
+}
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 350px;
+  align-self: center;
+}
+.welcome {
+  font-size: 1.8rem;
+}
+
+.det {
+  color: rgb(122, 122, 122);
+  position: relative;
+  font-size: 1.1rem;
+  margin-top: -1rem;
+}
+
+.logo {
+  height: 24px;
+  margin-top: -1rem;
+}
+
+.log {
+  display: inline-block;
+  color: rgb(122, 122, 122);
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.or {
+  color: rgb(122, 122, 122);
+  margin-top: -0.4rem;
+  font-weight: 400;
+}
+
+.input {
+  width: 120%;
+  height: 2.8rem;
+  /* position: relative; */
+  border: 1px solid #636364;
+  padding: 10px 15px;
+  border-radius: 0.4rem;
+  margin-top: 10rem;
+}
+
+
+p.text{
+  color: #EF4444;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 13rem;
+}
+
+.link {
+  color: #4a4afa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: right;
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.btn {
+  position: relative;
+  background-color: #4a4afa;
+  color: white;
+  padding: 1rem 4rem;
+  width: 120%;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  border: 0;
+}
+
+.acct{
+  color: rgb(122, 122, 122);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.link2{
+  font-size: 0.9rem;
+  color: #4a4afa;
+  text-decoration: none;
+}
+
+.able {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-img {
+  width: 97%;
+  height: 97%;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-image: url("../public/images/Rectangle 1.png");
+  margin-top: 1.5rem;
+}
+
+.lost {
+  color: white;
+  position: relative;
+  margin-left: 2rem;
+  top: 40rem;
+}
+
+.ote {
+  position: relative;
+  margin-left: 2rem;
+  top: 39rem;
+}
+
+.wont {
+  position: relative;
+  color: white;
+  top: 35rem;
+  margin-left: 11rem;
+}
+
+/* Notemanagement */
+
+.wrapper {
+  display: flex;
+  height: 1010px;
+  width: 1440px;
+  overflow: hidden;
+  position: relative;
+  background: #F8F8FE;
+}
+
+img.note{
+  height: 60px;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.wor{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+position: absolute;
+left: 80px;
+top: 202px;
+}
+
+.image{
+margin-right: 9.5%;
+bottom: 12.5%;
+background-color: #4a4afa;
+}
+
+.but{
+  background: #4A4AFA;
+  border-radius: 30px;
+  padding: 9px 19px;
+  width: 152px;
+  height: 50px;
+  border: #4a4afa; 
+  box-shadow: 0px 0px 10px  rgba(74, 74, 250, 1);
+  color: white;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+.task{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 160px;
+  width: 132px;
+  height: 60px;
+  left: 3rem;
+}
+
+.task2{
+  position: relative;
+  right: 10.33%; 
+  top: 8.33%; 
+}
+
+.note{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  /* gap: 7px; */
+
+  position: absolute;
+  width: 208px;
+  height: 30px;
+  left: 0.5rem;
+  top: 40rem;
+
+}
+
+.kenny{
+  width: 30px;
+  height: 30px;
+  margin-right: 0.6rem;
+}
+
+.name{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+  height: 30px;
+}
+
+.out{
+  text-decoration: none;
+  margin-left: 4rem;
+  color: #DE0202;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.wrap{
+position: absolute;
+width: 1035px;
+height: 1024px;
+left: 405px;
+top: -2px;
+
+background: #FFFFFF;
+border-radius: 50px 0px 0px 50px;
+}
+
+.roup{
+  display: flex;
+  justify-content: center; 
+  margin-left: 5rem;
+}
+
+.vector{
+  position: absolute;
+  left: 34.79%;
+  top: 23rem;
+  right: 35.83%;
+  margin-left: 7rem;
+  box-shadow: -1px -4px 20px  rgba(74, 74, 250, 1);
+}
+
+.here{
+  position: absolute;
+  width: 367px;
+  height: 48px;
+  top: 31rem;
+
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.vec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  left: 24rem;
+  top: 38rem;
+}
+
+.vector7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 21px;
+  width: 250px;
+  gap: 10px;
+  height: 56px;
+  background: #4A4AFA;
+  border-radius: 30px;
+  border:#4A4AFA;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Write new note */
+
+.wrapp{
+  position: absolute;
+  width: 1035px;
+  height: 1024px;
+  left: 405px;
+  top: -2px;
+
+  background: #FFFFFF;
+  /* border-radius: 50px 0px 0px 50px; */
+}
+
+/* .roupp{
+  display: flex;
+} */
+
+.arrow img{
+  position: absolute;
+  left: 3.33%;
+  right: 8.33%;
+  top: 5.33%;
+  bottom: 8.33%;
+}
+
+.frame{
+  
+  padding: 12px 20px;
+  gap: 10px;
+
+  position: relative;
+  width: 943px;
+  height: 159px;
+  /* left: 417px; */
+  right: 4rem;
+  top: 93px;
+}
+
+.enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  left: 3rem;
+  top: 18rem;
+}
+
+.enter input{
+  width: 161px;
+  height: 30px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #B4B2B2;
+  background-color: white;
+
+  border: 0;
+  outline: 0;
+  /*background-color: transparent;
+  color: white;
+  padding: 10px;
+  outline: none; */
+  margin-bottom: 2rem;
+}
+
+.enter input.enter2 {
+  font-size: 0.8rem;
+}
+
+
+/* Write New Note Active */
+
+.enterr h3{
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  left: 2.1rem;
+  top: 283px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.enterr h4{
+  position: absolute;
+  width: 958px;
+  height: 301px;
+  right: 1rem;
+  left: 2.1rem;
+  top: 350px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 206%;
+  /* or 33px */
+  
+  color: #000000;
+}
+
+.can{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+position: relative;
+
+}
+
+.can .cancel{
+  display: flex;
+  align-items: center;
+  padding: 10px 21px;
+  gap: 10px;
+  position: absolute;
+  width: 114px;
+  height: 50px;
+  left: 35rem;
+  top: 46rem;
+  background: #F7F7F7;
+  border-radius: 30px;
+  border: #F7F7F7;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.can .save{
+  display: flex;
+  align-items: center;
+  padding: 10px 21px;
+  gap: 10px;
+  position: absolute;
+  width: 144px;
+  height: 50px;
+  left: 44rem;
+  top: 46rem;
+  background: #4A4AFA;
+  border-radius: 30px;
+  border: #4A4AFA;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.can .cancel:hover{
+  transition: .2s ease-in-out;
+  background: #e3e3e3;
+}
+
+.can .save:hover{
+  transition: .2s ease-in-out;
+  background: #9e9ee8;
+}
+
+.wra{
+  position: absolute;
+  width: 394px;
+  height: 1024px;
+  left: 405px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-radius: 50px 0px 0px 50px;
+}
+
+/* Note Management */
+.search{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 131px 10px 23px;
+  position: absolute;
+  width: 307px;
+  height: 50px;
+  left: 2rem;
+  top: 32px;
+  background: #F8F8FE;
+  border-radius: 30px;
+  border: #F8F8FE;
+  padding-left: 3rem;
+  font-size: 0.9rem;
+  color: #A4A4D6;
+}
+
+.vec{
+  position: absolute;
+  left: 12.5%;
+  right: 12.62%;
+  top: 4.5%;
+  bottom: 14.62%;
+  z-index: 2;
+}
+
+.rec{
+  position: absolute;
+  width: 622px;
+  height: 1024px;
+  left: 818px;
+  top: -2px;
+  background: #FFFFFF;
+  border-radius: 0px;
+}
+
+img.rec2{
+  position: absolute;
+  width: 522px;
+  height: 159px;
+  /* left: 838px; */
+  top: 101px;
+  border-radius: 15px;
+  margin-left: 2rem;
+}
+
+.rec h2{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #050505;
+  position: absolute;
+  top: 19rem;
+  margin-left: 2rem;
+}
+
+.rec h4{
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #050505;
+  position: absolute;
+  top: 22rem;
+  margin-left: 2rem;
+}
+
+.co{
+  margin-top: 11rem;
+}
+.topic{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7px 65px 7px 13px;
+  gap: 10px;
+  width: 361px;
+  margin-left: 1rem;
+  background: #F8F8FE;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.topic h2 img{
+  margin-right: 1rem;
+  width: 10px;
+  height: 10px;
+}
+
+.topic h2 {
+  /* width: 154px; */
+  height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.topic p {
+  width: 304px;
+  height: 44px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.topic .pic{
+  display: flex;
+  flex-direction: row;
+  padding: 3px 12px;
+  gap: 5px;
+  width: 65px;
+  height: 18px;
+  background: #F0F0FF;
+  border-radius: 20px;
+  color: #4A4AFA;
+  margin: 0;
+}
+
+p.ellip{
+  position: relative;
+  color: #FF0000;
+  top: -2.4rem;
+  margin-left: 4.4rem;
+  background: #FFE0E0;
+  width: 88px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+
+
